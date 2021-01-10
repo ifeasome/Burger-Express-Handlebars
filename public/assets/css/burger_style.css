@@ -1,17 +1,23 @@
 body {
-  background-color: teal;
+	background-image: url("../../assets/images/burger_smoke.jpg");
 }
 
-.jumbotron h1{
-	color: #c576b1;
-
-}
-
-.jumbotron{
-	padding-top: 1%;
-	background-color:transparent !important;
-}
-
-.submitHeader{
-	color: seagreen;
-}
+li {
+	padding: 5px;
+	margin: 5px;
+	background: #faebd7;
+  }
+  
+  .label {
+	font-weight: bold;
+  }
+  
+  .create-form {
+	padding: 5px;
+	margin: 5px;
+	background: aqua;
+  }
+  
+  .form-group {
+	margin-bottom: 5px;
+  }
