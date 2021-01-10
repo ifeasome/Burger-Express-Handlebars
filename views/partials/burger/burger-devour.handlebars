@@ -1,11 +1,12 @@
+<link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
 <li>
 	{{burger_name}}
     {{#if devoured}} 
 
-	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">	 
-	
-    </button>
+	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}"> 	 
+	EAT ME
+    </button> 
    
     {{/if}}
-	<button class="delete-burger" data-id="{{this.id}}">DELETE A BURGER!</button>
+	<button class="delete-burger" data-id="{{this.id}}">REMOVE</button>
 </li>
