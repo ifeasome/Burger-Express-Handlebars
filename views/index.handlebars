@@ -6,7 +6,7 @@
     <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Enter New Burger Name:</label>
+    <label for="new_burger">Enter New Burger Name:</label>
     <input type="text" id="new_burger" name="burger_name">
   </div>
 
@@ -15,25 +15,31 @@
    
 
     <!-- left side -->
-    <div class="col-md-4">
-      <h3 class="submitHeader">Burgers in Waiting</h3>
-      <div id="burgersInWaiting">
+   <h2>Burgers In Waiting</h2>
 
-        <div>  
-          {{#each burgers}}
-         {{#unless devoured}}
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burger/burger-devour devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
 
-         </div>
 
-        <!-- Add User Inputted Burger -->
-         {{/unless}}
-         {{/each}}
-      </div>
-    </div>
+ <!-- right side -->
+<h2>Devoured Burgers</h2>
 
-    <div class="col-md-4"></div>
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burger/burger-devour devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
 
-    <!-- right side -->
+    
+
+   
     <div class="col-md-4">
       <h3 class="submitHeader">Burgers Devoured!!</h3>
       <div id="burgersDevoured">
