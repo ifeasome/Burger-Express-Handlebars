@@ -1,19 +1,17 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+body {
+  background-color: teal;
 }
 
-.label {
-  font-weight: bold;
+.jumbotron h1{
+	color: #c576b1;
+
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+.jumbotron{
+	padding-top: 1%;
+	background-color:transparent !important;
 }
 
-.form-group {
-  margin-bottom: 5px;
+.submitHeader{
+	color: seagreen;
 }

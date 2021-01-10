@@ -50,7 +50,8 @@ let orm = {
       cb(result);
     });
   },
-  create: function(table, cols, vals, cb) {
+  insert: function(table, cols, vals, cb) {
+    console.log(vals);
     let queryString = "INSERT INTO " + table;
 
     queryString += " (";
