@@ -1,14 +1,9 @@
+<div class="container-fluid">
+<h1>The Game of Burger</h1>
+
 <div class="row">
   <center>
-    <!-- left side -->
-    <div class="col-md-4">
-      <h3 class="submitHeader">Burgers in Waiting</h3>
-      <div id="burgersInWaiting">
-
-        <!-- Add User Inputted Burger -->
-        {{#each burgers}}
-         {{#unless devoured}}
-         <form action="api/burgers/eat/{{id}}" method="POST">
+    <form action="api/burgers/eat/{{id}}" method="POST">
          <div class="input-group">
            <li class="form-control">{{id}}. {{burger_name}}</li>
            <span class="input-group-btn">
@@ -16,6 +11,19 @@
            </span>
          </div>
          </form>
+
+    <!-- left side -->
+    <div class="col-md-4">
+      <h3 class="submitHeader">Burgers in Waiting</h3>
+      <div id="burgersInWaiting">
+
+        <div>  
+          {{#each burgers}}
+         {{#unless devoured}}
+
+         </div>
+
+        <!-- Add User Inputted Burger -->
          {{/unless}}
          {{/each}}
       </div>
@@ -40,4 +48,5 @@
       </div>
     </div>
   </center>
+</div>
 </div>
