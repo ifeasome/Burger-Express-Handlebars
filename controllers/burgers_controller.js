@@ -19,7 +19,7 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/burger/insert", function(req, res) {
+router.post("/api/burgers/insert", function(req, res) {
   burger.insert("burger_name", req.body.name, function() {
     res.redirect("/");
   });
