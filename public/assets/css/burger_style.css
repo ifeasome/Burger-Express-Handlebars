@@ -5,7 +5,9 @@ body {
 li {
 	padding: 5px;
 	margin: 5px;
-	background: #faebd7;
+  background: #faebd7;
+  border-radius: 15px;
+  list-style-type:none;
   }
   
   .label {
@@ -15,9 +17,20 @@ li {
   .create-form {
 	padding: 5px;
 	margin: 5px;
-	background: aqua;
   }
   
   .form-group {
 	margin-bottom: 5px;
+  }
+
+  h1, h2 {
+	  color: white;
+  }
+
+  button {
+    border-radius: 8px;
+  }
+
+  .fas {
+    color: red;
   }
