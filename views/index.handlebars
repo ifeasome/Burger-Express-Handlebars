@@ -15,7 +15,8 @@
    
 
     <!-- left side -->
-   <h2>Burgers In Waiting</h2>
+<div> 
+<h2>Burgers In Waiting</h2>
 
 <ul>
   {{#each burgers}}
@@ -24,9 +25,10 @@
     {{/unless}}
   {{/each}}
 </ul>
-
+</div>
 
  <!-- right side -->
+<div> 
 <h2>Devoured Burgers</h2>
 
 <ul>
@@ -36,25 +38,10 @@
     {{/if}}
   {{/each}}
 </ul>
-
+</div>
     
 
-   
-    <div class="col-md-4">
-      <h3 class="submitHeader">Burgers Devoured!!</h3>
-      <div id="burgersDevoured">
 
-        <!-- All Devoured Burgers -->
-        {{#each burgers}}
-         {{#if this.devoured}}
-         <div class="input-group">
-           <li class="form-control">{{this.id}} .{{this.burger_name}}</li>
-         </div>
-         {{/if}}
-         {{/each}}
          
       </div>
     </div>
-  </center>
-</div>
-</div>
