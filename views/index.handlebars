@@ -1,25 +1,35 @@
+<link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
+
 <div class="container-fluid">
 
-
 <div class="row">
+  
   <center>
-    <h1>The Game of Burger</h1>
-    <form class="create-form">
+    <h1>The Game of Burger</h1> <i class="fas fa-hamburger fa-4x"></i>
 
-  <div class="form-group">
-    <label for="new_burger">Enter Burger Name:</label>
-    <input type="text" id="new_burger" name="burger_name">
+     <form class="create-form">
+    
+  <div class="form-group row g-2">
+    <div class="col-md-2 offset-md-5">
+      <div class="form-floating"> 
+         <input type="text" class="form-control" id="floatingInputGrid" placeholder="Enter Burger Name">
+      <label for="floatingInputGrid">Enter Burger Name</label>
+    </div>
+  </div>
   </div>
 
   <button type="submit">Create!</button>
 </form>
-   
+
+  </center>
 
     <!-- left side -->
-<div> 
-<h2>Burgers In Waiting</h2>
+<div class="row justify-content-around"> 
 
+<div class="col-4"> 
+  
 <ul>
+  <h2>Burgers In Waiting</h2>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burger/burger-devour devoured=true}}
@@ -28,17 +38,20 @@
 </ul>
 </div>
 
+
  <!-- right side -->
-<div> 
-<h2>Devoured Burgers</h2>
+<div class="col-4"> 
+
 
 <ul>
+  <h2>Devoured Burgers</h2>
   {{#each burgers}}
     {{#if devoured}}
       {{> burger/burger-devour devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
+</div>
 </div>
     
  
