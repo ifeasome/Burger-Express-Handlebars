@@ -28,9 +28,11 @@
     console.log("Are you with me?");
 
       let newBurger = {
-        name: [$("#new_burger").val().trim()]
+       name: [$("#new_burger").val().trim()]
       };
-  
+
+     console.log($("#new_burger").val());
+
       // Send the POST request.
       $.ajax("/api/burgers/", {
         type: "POST",

@@ -1,6 +1,6 @@
 body {
-	background-image: url("../../assets/images/burger_smoke.jpg");
-}
+background-image: url("../../assets/images/burger_smoke.jpg");
+} 
 
 li {
 	padding: 5px;
@@ -31,6 +31,6 @@ li {
     border-radius: 8px;
   }
 
-  .fas {
+  .fas fa-hamburger {
     color: red;
   }
