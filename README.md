@@ -33,7 +33,7 @@ To view repo, go to: [Application Repo](https://github.com/ifeasome/Burger-Expre
 ## Usage 
 A Burger restaurant app that lets users input the names of burgers they'd like to eat.
 
-[Deployed App]()
+[Deployed App](https://pacific-caverns-39002.herokuapp.com/)
 
 
 ## Tests 
